@@ -25,5 +25,50 @@
         "peekOfCode": "n = int(input(\"Enter the size of the diamond: \"))\nprint_diamond(n)",
         "detail": "day1.tempCodeRunnerFile",
         "documentation": {}
+    },
+    {
+        "label": "swap_array",
+        "kind": 2,
+        "importPath": "day2.array_swap",
+        "description": "day2.array_swap",
+        "peekOfCode": "def swap_array(arr):\n    n = len(arr)\n    for i in range(n//2):\n        arr[i], arr[n-i-1] = arr[n-i-1], arr[i]\nmy_array = [1, 2, 3, 4, 5, 6]\nswap_array(my_array)\n# print(my_array)\nmy_string = \"who is jim\"\nword_to_check = \"jim\"\nif word_to_check in my_string:",
+        "detail": "day2.array_swap",
+        "documentation": {}
+    },
+    {
+        "label": "my_array",
+        "kind": 5,
+        "importPath": "day2.array_swap",
+        "description": "day2.array_swap",
+        "peekOfCode": "my_array = [1, 2, 3, 4, 5, 6]\nswap_array(my_array)\n# print(my_array)\nmy_string = \"who is jim\"\nword_to_check = \"jim\"\nif word_to_check in my_string:\n    print(f\"The word '{word_to_check}' is present in the string.\")\nelse:\n    print(f\"The word '{word_to_check}' is not present in the string.\")\nsum = 0",
+        "detail": "day2.array_swap",
+        "documentation": {}
+    },
+    {
+        "label": "my_string",
+        "kind": 5,
+        "importPath": "day2.array_swap",
+        "description": "day2.array_swap",
+        "peekOfCode": "my_string = \"who is jim\"\nword_to_check = \"jim\"\nif word_to_check in my_string:\n    print(f\"The word '{word_to_check}' is present in the string.\")\nelse:\n    print(f\"The word '{word_to_check}' is not present in the string.\")\nsum = 0\nfor i in range(50):\n    sum = sum+i\nprint(sum)",
+        "detail": "day2.array_swap",
+        "documentation": {}
+    },
+    {
+        "label": "word_to_check",
+        "kind": 5,
+        "importPath": "day2.array_swap",
+        "description": "day2.array_swap",
+        "peekOfCode": "word_to_check = \"jim\"\nif word_to_check in my_string:\n    print(f\"The word '{word_to_check}' is present in the string.\")\nelse:\n    print(f\"The word '{word_to_check}' is not present in the string.\")\nsum = 0\nfor i in range(50):\n    sum = sum+i\nprint(sum)",
+        "detail": "day2.array_swap",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 5,
+        "importPath": "day2.array_swap",
+        "description": "day2.array_swap",
+        "peekOfCode": "sum = 0\nfor i in range(50):\n    sum = sum+i\nprint(sum)",
+        "detail": "day2.array_swap",
+        "documentation": {}
     }
 ]
