@@ -1,5 +1,68 @@
 [
     {
+        "label": "pyautogui",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyautogui",
+        "description": "pyautogui",
+        "detail": "pyautogui",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "good_sequence",
+        "kind": 2,
+        "importPath": "codeforces_problem.good_sequence",
+        "description": "codeforces_problem.good_sequence",
+        "peekOfCode": "def good_sequence():\n    N = int(input())\n    a = list(map(int, input().split()))\n    freq = {}\n    for num in a:\n        if num in freq:\n            freq[num] += 1\n        else:\n            freq[num] = 1\n    removals = 0",
+        "detail": "codeforces_problem.good_sequence",
+        "documentation": {}
+    },
+    {
+        "label": "split_balanced_strings",
+        "kind": 2,
+        "importPath": "codeforces_problem.max_split",
+        "description": "codeforces_problem.max_split",
+        "peekOfCode": "def split_balanced_strings():\n    S = input().strip()\n    count = 0\n    balance = 0\n    balanced_strings = []\n    current = \"\"\n    for char in S:\n        current += char\n        if char == 'L':\n            balance += 1",
+        "detail": "codeforces_problem.max_split",
+        "documentation": {}
+    },
+    {
+        "label": "max_operations",
+        "kind": 2,
+        "importPath": "codeforces_problem.minimize_number",
+        "description": "codeforces_problem.minimize_number",
+        "peekOfCode": "def max_operations():\n    N = int(input())\n    A = list(map(int, input().split()))\n    operations = 0\n    while all(x % 2 == 0 for x in A):\n        A = [x // 2 for x in A]\n        operations += 1\n    print(operations)\nmax_operations()",
+        "detail": "codeforces_problem.minimize_number",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "codeforces_problem.pyramid_py_auto_gui",
+        "description": "codeforces_problem.pyramid_py_auto_gui",
+        "peekOfCode": "num = 1\ntime.sleep(2)\nfor row in range(num):\n    for col in range(row + 1):\n        pyautogui.typewrite('#', interval=0.1)\n    pyautogui.press('enter')",
+        "detail": "codeforces_problem.pyramid_py_auto_gui",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "codeforces_problem.tempCodeRunnerFile",
+        "description": "codeforces_problem.tempCodeRunnerFile",
+        "peekOfCode": "num = 5\n# for row in range(num):\n#     for col in range(row+1):\n#         print('#', end='')\n#     print()",
+        "detail": "codeforces_problem.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
         "label": "print_diamond",
         "kind": 2,
         "importPath": "day1.print_pattern",
