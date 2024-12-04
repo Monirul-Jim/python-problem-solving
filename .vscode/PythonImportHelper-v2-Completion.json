@@ -49,7 +49,7 @@
         "kind": 5,
         "importPath": "codeforces_problem.pyramid_py_auto_gui",
         "description": "codeforces_problem.pyramid_py_auto_gui",
-        "peekOfCode": "num = 1\ntime.sleep(2)\nfor row in range(num):\n    for col in range(row + 1):\n        pyautogui.typewrite('#', interval=0.1)\n    pyautogui.press('enter')",
+        "peekOfCode": "num = 6\ntime.sleep(2)\nfor row in range(num):\n    for col in range(row + 1):\n        pyautogui.typewrite('#', interval=0.1)\n    pyautogui.press('enter')",
         "detail": "codeforces_problem.pyramid_py_auto_gui",
         "documentation": {}
     },
@@ -132,6 +132,60 @@
         "description": "day2.array_swap",
         "peekOfCode": "sum = 0\nfor i in range(50):\n    sum = sum+i\nprint(sum)",
         "detail": "day2.array_swap",
+        "documentation": {}
+    },
+    {
+        "label": "Phone",
+        "kind": 6,
+        "importPath": "oop.class_object.methods",
+        "description": "oop.class_object.methods",
+        "peekOfCode": "class Phone:\n    price = 12000\n    color = 'blue'\n    brand = 'samsung'\n    features = ['camera', 'speaker', 'hammer']\n    def call(self):\n        print('calling one person')\n    def send_sms(self, phone, sms):\n        text = f'sending SMS to: {phone} and message: {sms}'\n        return text",
+        "detail": "oop.class_object.methods",
+        "documentation": {}
+    },
+    {
+        "label": "call",
+        "kind": 2,
+        "importPath": "oop.class_object.methods",
+        "description": "oop.class_object.methods",
+        "peekOfCode": "def call():\n    print('calling someone i dont know')\n    return 'call done'\nclass Phone:\n    price = 12000\n    color = 'blue'\n    brand = 'samsung'\n    features = ['camera', 'speaker', 'hammer']\n    def call(self):\n        print('calling one person')",
+        "detail": "oop.class_object.methods",
+        "documentation": {}
+    },
+    {
+        "label": "my_phone",
+        "kind": 5,
+        "importPath": "oop.class_object.methods",
+        "description": "oop.class_object.methods",
+        "peekOfCode": "my_phone = Phone()\nprint(my_phone.features)\nmy_phone.call()\nres = my_phone.send_sms(17, 'hello monirul')\nprint(res)",
+        "detail": "oop.class_object.methods",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "oop.class_object.methods",
+        "description": "oop.class_object.methods",
+        "peekOfCode": "res = my_phone.send_sms(17, 'hello monirul')\nprint(res)",
+        "detail": "oop.class_object.methods",
+        "documentation": {}
+    },
+    {
+        "label": "Phone",
+        "kind": 6,
+        "importPath": "oop.class_object.simple_class",
+        "description": "oop.class_object.simple_class",
+        "peekOfCode": "class Phone:\n    price = 5000\n    color = 'blue'\n    brand = 'samsung'\nmy_phone = Phone()\nprint(my_phone.price)",
+        "detail": "oop.class_object.simple_class",
+        "documentation": {}
+    },
+    {
+        "label": "my_phone",
+        "kind": 5,
+        "importPath": "oop.class_object.simple_class",
+        "description": "oop.class_object.simple_class",
+        "peekOfCode": "my_phone = Phone()\nprint(my_phone.price)",
+        "detail": "oop.class_object.simple_class",
         "documentation": {}
     }
 ]

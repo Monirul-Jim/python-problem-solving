@@ -2,7 +2,7 @@
 
 import pyautogui
 import time
-num = 1
+num = 6
 time.sleep(2)
 
 for row in range(num):
