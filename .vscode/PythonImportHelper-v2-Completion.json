@@ -27,6 +27,33 @@
         "documentation": {}
     },
     {
+        "label": "Library",
+        "kind": 6,
+        "importPath": "book_lend_system.library_class",
+        "description": "book_lend_system.library_class",
+        "peekOfCode": "class Library:\n    _book_list = []\n    @classmethod\n    def entry_book(cls, book):\n        cls._book_list.append(book)\n    @classmethod\n    def view_all_books(cls):\n        if not cls._book_list:\n            print(\"No books available in the library.\")\n        else:",
+        "detail": "book_lend_system.library_class",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "kind": 6,
+        "importPath": "book_lend_system.library_class",
+        "description": "book_lend_system.library_class",
+        "peekOfCode": "class Book:\n    def __init__(self, book_id, title, author):\n        self._book_id = book_id\n        self._title = title\n        self._author = author\n        self._availability = True\n        Library.entry_book(self)\n    def borrow_book(self):\n        if self._availability:\n            self._availability = False",
+        "detail": "book_lend_system.library_class",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "book_lend_system.library_class",
+        "description": "book_lend_system.library_class",
+        "peekOfCode": "def main():\n    Book(\"100\", \"Introduction to Python Programming\", \"Guido van Rossum\")\n    Book(\"101\", \"Introduction to C++\", \"Bjarne Stroustrup\")\n    Book(\"102\", \"Javascript & Modern Web\", \"Brendan Eich\")\n    while True:\n        print(\"\\nLibrary Menu:\")\n        print(\"1. View All Books\")\n        print(\"2. Borrow Book\")\n        print(\"3. Return Book\")\n        print(\"4. Exit\")",
+        "detail": "book_lend_system.library_class",
+        "documentation": {}
+    },
+    {
         "label": "good_sequence",
         "kind": 2,
         "importPath": "codeforces_problem.good_sequence",
