@@ -144,6 +144,24 @@
         "documentation": {}
     },
     {
+        "label": "calculate_distance",
+        "kind": 2,
+        "importPath": "leap_year_plus_another.distance",
+        "description": "leap_year_plus_another.distance",
+        "peekOfCode": "def calculate_distance(x1, y1, x2, y2):\n    return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)\nprint(\"Enter the co-ordinates of two points:\")\nx1, y1 = map(float, input(\"Point 1 (x1 y1): \").split())\nx2, y2 = map(float, input(\"Point 2 (x2 y2): \").split())\ndistance = calculate_distance(x1, y1, x2, y2)\nprint(f\"Distance: {distance:.2f}\")",
+        "detail": "leap_year_plus_another.distance",
+        "documentation": {}
+    },
+    {
+        "label": "distance",
+        "kind": 5,
+        "importPath": "leap_year_plus_another.distance",
+        "description": "leap_year_plus_another.distance",
+        "peekOfCode": "distance = calculate_distance(x1, y1, x2, y2)\nprint(f\"Distance: {distance:.2f}\")",
+        "detail": "leap_year_plus_another.distance",
+        "documentation": {}
+    },
+    {
         "label": "is_leap_year",
         "kind": 2,
         "importPath": "leap_year_plus_another.leap_year",
@@ -153,39 +171,30 @@
         "documentation": {}
     },
     {
-        "label": "calculate_distance",
-        "kind": 2,
-        "importPath": "leap_year_plus_another.leap_year",
-        "description": "leap_year_plus_another.leap_year",
-        "peekOfCode": "def calculate_distance(x1, y1, x2, y2):\n    return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)\nprint(\"Enter the co-ordinates of two points:\")\nx1, y1 = map(float, input(\"Point 1 (x1 y1): \").split())\nx2, y2 = map(float, input(\"Point 2 (x2 y2): \").split())\ndistance = calculate_distance(x1, y1, x2, y2)\nprint(f\"Distance: {distance:.2f}\")\n# Positive Negative\n# বাং\n# Problem Statement",
-        "detail": "leap_year_plus_another.leap_year",
-        "documentation": {}
-    },
-    {
         "label": "year",
         "kind": 5,
         "importPath": "leap_year_plus_another.leap_year",
         "description": "leap_year_plus_another.leap_year",
-        "peekOfCode": "year = int(input(\"Enter a year: \"))\nif is_leap_year(year):\n    print(f\"{year} is a leap year.\")\nelse:\n    print(f\"{year} is not a leap year.\")\n# Two Point Distance\n# বাং\n# Problem Statement\n# Write a program to calculate distance between two points.\n# Input",
-        "detail": "leap_year_plus_another.leap_year",
-        "documentation": {}
-    },
-    {
-        "label": "distance",
-        "kind": 5,
-        "importPath": "leap_year_plus_another.leap_year",
-        "description": "leap_year_plus_another.leap_year",
-        "peekOfCode": "distance = calculate_distance(x1, y1, x2, y2)\nprint(f\"Distance: {distance:.2f}\")\n# Positive Negative\n# বাং\n# Problem Statement\n# Write a program that checks if a number entered by the user is positive, negative, or zero.\n# Input\n# The input consists of a integer.\n# Output\n# Output the type of number.",
+        "peekOfCode": "year = int(input(\"Enter a year: \"))\nif is_leap_year(year):\n    print(f\"{year} is a leap year.\")\nelse:\n    print(f\"{year} is not a leap year.\")",
         "detail": "leap_year_plus_another.leap_year",
         "documentation": {}
     },
     {
         "label": "number",
         "kind": 5,
-        "importPath": "leap_year_plus_another.leap_year",
-        "description": "leap_year_plus_another.leap_year",
-        "peekOfCode": "number = int(input(\"Enter a number: \"))\nif number > 0:\n    print(f\"{number} is a positive number.\")\nelif number < 0:\n    print(f\"{number} is a negative number.\")\nelse:\n    print(\"The number is zero.\")\n# Game of Swap\n# বাং\n# Problem Statement",
-        "detail": "leap_year_plus_another.leap_year",
+        "importPath": "leap_year_plus_another.positive_number",
+        "description": "leap_year_plus_another.positive_number",
+        "peekOfCode": "number = int(input(\"Enter a number: \"))\nif number > 0:\n    print(f\"{number} is a positive number.\")\nelif number < 0:\n    print(f\"{number} is a negative number.\")\nelse:\n    print(\"The number is zero.\")",
+        "detail": "leap_year_plus_another.positive_number",
+        "documentation": {}
+    },
+    {
+        "label": "is_leap_year",
+        "kind": 2,
+        "importPath": "leap_year_plus_another.tempCodeRunnerFile",
+        "description": "leap_year_plus_another.tempCodeRunnerFile",
+        "peekOfCode": "def is_leap_year(year):\n#     if year % 4 == 0:\n#         if year % 100 == 0:\n#             if year % 400 == 0:\n#                 return True\n#             else:\n#                 return False\n#         else:\n#             return True\n#     else:",
+        "detail": "leap_year_plus_another.tempCodeRunnerFile",
         "documentation": {}
     },
     {
