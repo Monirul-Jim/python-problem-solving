@@ -27,31 +27,6 @@
         "documentation": {}
     },
     {
-        "label": "phonenumbers",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "phonenumbers",
-        "description": "phonenumbers",
-        "detail": "phonenumbers",
-        "documentation": {}
-    },
-    {
-        "label": "geocoder",
-        "importPath": "phonenumbers",
-        "description": "phonenumbers",
-        "isExtraImport": true,
-        "detail": "phonenumbers",
-        "documentation": {}
-    },
-    {
-        "label": "carrier",
-        "importPath": "phonenumbers",
-        "description": "phonenumbers",
-        "isExtraImport": true,
-        "detail": "phonenumbers",
-        "documentation": {}
-    },
-    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -310,33 +285,6 @@
         "description": "oop.class_object.simple_class",
         "peekOfCode": "my_phone = Phone()\nprint(my_phone.price)",
         "detail": "oop.class_object.simple_class",
-        "documentation": {}
-    },
-    {
-        "label": "track_phone_number",
-        "kind": 2,
-        "importPath": "restaurant_management.location",
-        "description": "restaurant_management.location",
-        "peekOfCode": "def track_phone_number(phone_number):\n    try:\n        # Parse phone number\n        parsed_number = phonenumbers.parse(phone_number)\n        # Get location\n        location = geocoder.description_for_number(parsed_number, 'en')\n        # Get carrier info\n        carrier_info = carrier.name_for_number(parsed_number, 'en')\n        return {\n            \"Location\": location,",
-        "detail": "restaurant_management.location",
-        "documentation": {}
-    },
-    {
-        "label": "number",
-        "kind": 5,
-        "importPath": "restaurant_management.location",
-        "description": "restaurant_management.location",
-        "peekOfCode": "number = input(\"Enter the phone number (with country code): \")\nresult = track_phone_number(number)\nprint(result)",
-        "detail": "restaurant_management.location",
-        "documentation": {}
-    },
-    {
-        "label": "result",
-        "kind": 5,
-        "importPath": "restaurant_management.location",
-        "description": "restaurant_management.location",
-        "peekOfCode": "result = track_phone_number(number)\nprint(result)",
-        "detail": "restaurant_management.location",
         "documentation": {}
     },
     {
