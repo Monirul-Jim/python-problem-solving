@@ -27,6 +27,40 @@
         "documentation": {}
     },
     {
+        "label": "phonenumbers",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "phonenumbers",
+        "description": "phonenumbers",
+        "detail": "phonenumbers",
+        "documentation": {}
+    },
+    {
+        "label": "geocoder",
+        "importPath": "phonenumbers",
+        "description": "phonenumbers",
+        "isExtraImport": true,
+        "detail": "phonenumbers",
+        "documentation": {}
+    },
+    {
+        "label": "carrier",
+        "importPath": "phonenumbers",
+        "description": "phonenumbers",
+        "isExtraImport": true,
+        "detail": "phonenumbers",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
         "label": "Library",
         "kind": 6,
         "importPath": "book_lend_system.library_class",
@@ -276,6 +310,69 @@
         "description": "oop.class_object.simple_class",
         "peekOfCode": "my_phone = Phone()\nprint(my_phone.price)",
         "detail": "oop.class_object.simple_class",
+        "documentation": {}
+    },
+    {
+        "label": "track_phone_number",
+        "kind": 2,
+        "importPath": "restaurant_management.location",
+        "description": "restaurant_management.location",
+        "peekOfCode": "def track_phone_number(phone_number):\n    try:\n        # Parse phone number\n        parsed_number = phonenumbers.parse(phone_number)\n        # Get location\n        location = geocoder.description_for_number(parsed_number, 'en')\n        # Get carrier info\n        carrier_info = carrier.name_for_number(parsed_number, 'en')\n        return {\n            \"Location\": location,",
+        "detail": "restaurant_management.location",
+        "documentation": {}
+    },
+    {
+        "label": "number",
+        "kind": 5,
+        "importPath": "restaurant_management.location",
+        "description": "restaurant_management.location",
+        "peekOfCode": "number = input(\"Enter the phone number (with country code): \")\nresult = track_phone_number(number)\nprint(result)",
+        "detail": "restaurant_management.location",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "restaurant_management.location",
+        "description": "restaurant_management.location",
+        "peekOfCode": "result = track_phone_number(number)\nprint(result)",
+        "detail": "restaurant_management.location",
+        "documentation": {}
+    },
+    {
+        "label": "Customer",
+        "kind": 6,
+        "importPath": "restaurant_management.restaurant",
+        "description": "restaurant_management.restaurant",
+        "peekOfCode": "class Customer:\n    def __init__(self, name, email, address):\n        self.name = name\n        self.email = email\n        self.address = address\n        self.balance = 0\n        self.orders = []\n    def check_balance(self):\n        print(f\"Your current balance is: ${self.balance}\")\n    def add_funds(self):",
+        "detail": "restaurant_management.restaurant",
+        "documentation": {}
+    },
+    {
+        "label": "Admin",
+        "kind": 6,
+        "importPath": "restaurant_management.restaurant",
+        "description": "restaurant_management.restaurant",
+        "peekOfCode": "class Admin:\n    def __init__(self, restaurant):\n        self.restaurant = restaurant\n    def add_customer(self):\n        name = input(\"Enter customer name: \")\n        email = input(\"Enter customer email: \")\n        address = input(\"Enter customer address: \")\n        customer = Customer(name, email, address)\n        self.restaurant.add_customer(customer)\n        print(f\"Customer {name} added successfully.\")",
+        "detail": "restaurant_management.restaurant",
+        "documentation": {}
+    },
+    {
+        "label": "Restaurant",
+        "kind": 6,
+        "importPath": "restaurant_management.restaurant",
+        "description": "restaurant_management.restaurant",
+        "peekOfCode": "class Restaurant:\n    def __init__(self):\n        self.menu = {}\n        self.customers = []\n    def manage_menu(self, item, price=None):\n        if price is None:\n            if item in self.menu:\n                del self.menu[item]\n                print(f\"Item '{item}' removed from menu.\")\n            else:",
+        "detail": "restaurant_management.restaurant",
+        "documentation": {}
+    },
+    {
+        "label": "main_menu",
+        "kind": 2,
+        "importPath": "restaurant_management.restaurant",
+        "description": "restaurant_management.restaurant",
+        "peekOfCode": "def main_menu():\n    restaurant = Restaurant()\n    admin = Admin(restaurant)\n    customer = None\n    while True:\n        print(\"\\n--- Restaurant Management System ---\")\n        print(\"1. Admin Login\")\n        print(\"2. Customer Login\")\n        print(\"3. Exit\")\n        choice = input(\"Enter your choice: \")",
+        "detail": "restaurant_management.restaurant",
         "documentation": {}
     }
 ]
