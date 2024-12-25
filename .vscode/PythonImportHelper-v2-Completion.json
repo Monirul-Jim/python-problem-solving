@@ -366,5 +366,50 @@
         "peekOfCode": "def main_menu():\n    restaurant = Restaurant()\n    admin = Admin(restaurant)\n    customer = None\n    while True:\n        print(\"\\n--- Restaurant Management System ---\")\n        print(\"1. Admin Login\")\n        print(\"2. Customer Login\")\n        print(\"3. Exit\")\n        choice = input(\"Enter your choice: \")",
         "detail": "restaurant_management.restaurant",
         "documentation": {}
+    },
+    {
+        "label": "display_menu",
+        "kind": 2,
+        "importPath": "todo_list.todo_list",
+        "description": "todo_list.todo_list",
+        "peekOfCode": "def display_menu():\n    print(\"\\nTo-Do List Menu\")\n    print(\"1. Add Task\")\n    print(\"2. View Tasks\")\n    print(\"3. Remove Task\")\n    print(\"4. Exit\")\ndef add_task(tasks):\n    task = input(\"Enter a new task: \")\n    tasks.append(task)\n    print(f\"'{task}' has been added to the list.\")",
+        "detail": "todo_list.todo_list",
+        "documentation": {}
+    },
+    {
+        "label": "add_task",
+        "kind": 2,
+        "importPath": "todo_list.todo_list",
+        "description": "todo_list.todo_list",
+        "peekOfCode": "def add_task(tasks):\n    task = input(\"Enter a new task: \")\n    tasks.append(task)\n    print(f\"'{task}' has been added to the list.\")\ndef view_tasks(tasks):\n    if not tasks:\n        print(\"No tasks in the list.\")\n    else:\n        print(\"\\nYour Tasks:\")\n        for idx, task in enumerate(tasks, start=1):",
+        "detail": "todo_list.todo_list",
+        "documentation": {}
+    },
+    {
+        "label": "view_tasks",
+        "kind": 2,
+        "importPath": "todo_list.todo_list",
+        "description": "todo_list.todo_list",
+        "peekOfCode": "def view_tasks(tasks):\n    if not tasks:\n        print(\"No tasks in the list.\")\n    else:\n        print(\"\\nYour Tasks:\")\n        for idx, task in enumerate(tasks, start=1):\n            print(f\"{idx}. {task}\")\ndef remove_task(tasks):\n    view_tasks(tasks)\n    if tasks:",
+        "detail": "todo_list.todo_list",
+        "documentation": {}
+    },
+    {
+        "label": "remove_task",
+        "kind": 2,
+        "importPath": "todo_list.todo_list",
+        "description": "todo_list.todo_list",
+        "peekOfCode": "def remove_task(tasks):\n    view_tasks(tasks)\n    if tasks:\n        try:\n            task_num = int(input(\"Enter the number of the task to remove: \"))\n            removed_task = tasks.pop(task_num - 1)\n            print(f\"'{removed_task}' has been removed from the list.\")\n        except (ValueError, IndexError):\n            print(\"Invalid input. Please try again.\")\ndef main():",
+        "detail": "todo_list.todo_list",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "todo_list.todo_list",
+        "description": "todo_list.todo_list",
+        "peekOfCode": "def main():\n    tasks = []\n    while True:\n        display_menu()\n        choice = input(\"Choose an option (1-4): \")\n        if choice == \"1\":\n            add_task(tasks)\n        elif choice == \"2\":\n            view_tasks(tasks)\n        elif choice == \"3\":",
+        "detail": "todo_list.todo_list",
+        "documentation": {}
     }
 ]
