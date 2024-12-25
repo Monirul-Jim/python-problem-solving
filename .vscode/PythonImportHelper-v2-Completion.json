@@ -1,5 +1,13 @@
 [
     {
+        "label": "permutations",
+        "importPath": "itertools",
+        "description": "itertools",
+        "isExtraImport": true,
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
         "label": "pyautogui",
         "kind": 6,
         "isExtraImport": true,
@@ -33,6 +41,42 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "binary_search",
+        "kind": 2,
+        "importPath": "binary_search_logest.binary_search",
+        "description": "binary_search_logest.binary_search",
+        "peekOfCode": "def binary_search(arr, target):\n    low, high = 0, len(arr) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1",
+        "detail": "binary_search_logest.binary_search",
+        "documentation": {}
+    },
+    {
+        "label": "length_of_longest_substring",
+        "kind": 2,
+        "importPath": "binary_search_logest.longest_permutation",
+        "description": "binary_search_logest.longest_permutation",
+        "peekOfCode": "def length_of_longest_substring(s):\n    char_set = set()\n    left = 0\n    max_length = 0\n    for right in range(len(s)):\n        while s[right] in char_set:\n            char_set.remove(s[left])\n            left += 1\n        char_set.add(s[right])\n        max_length = max(max_length, right - left + 1)",
+        "detail": "binary_search_logest.longest_permutation",
+        "documentation": {}
+    },
+    {
+        "label": "generate_permutations",
+        "kind": 2,
+        "importPath": "binary_search_logest.string_permutation",
+        "description": "binary_search_logest.string_permutation",
+        "peekOfCode": "def generate_permutations(s):\n    return sorted([\"\".join(p) for p in permutations(s)])\ns = input(\"Enter string: \")\nprint(\" \".join(generate_permutations(s)))",
+        "detail": "binary_search_logest.string_permutation",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "binary_search_logest.string_permutation",
+        "description": "binary_search_logest.string_permutation",
+        "peekOfCode": "s = input(\"Enter string: \")\nprint(\" \".join(generate_permutations(s)))",
+        "detail": "binary_search_logest.string_permutation",
         "documentation": {}
     },
     {
