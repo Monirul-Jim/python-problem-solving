@@ -232,6 +232,42 @@
         "documentation": {}
     },
     {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "findword.reverse_word",
+        "description": "findword.reverse_word",
+        "peekOfCode": "sentence = input('Enter a sentence : ')\nwords = sentence.split()\nreversed_word = [word[::-1] for word in words]\nresult = ' '.join(reversed_word)\nprint(result)",
+        "detail": "findword.reverse_word",
+        "documentation": {}
+    },
+    {
+        "label": "words",
+        "kind": 5,
+        "importPath": "findword.reverse_word",
+        "description": "findword.reverse_word",
+        "peekOfCode": "words = sentence.split()\nreversed_word = [word[::-1] for word in words]\nresult = ' '.join(reversed_word)\nprint(result)",
+        "detail": "findword.reverse_word",
+        "documentation": {}
+    },
+    {
+        "label": "reversed_word",
+        "kind": 5,
+        "importPath": "findword.reverse_word",
+        "description": "findword.reverse_word",
+        "peekOfCode": "reversed_word = [word[::-1] for word in words]\nresult = ' '.join(reversed_word)\nprint(result)",
+        "detail": "findword.reverse_word",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "findword.reverse_word",
+        "description": "findword.reverse_word",
+        "peekOfCode": "result = ' '.join(reversed_word)\nprint(result)",
+        "detail": "findword.reverse_word",
+        "documentation": {}
+    },
+    {
         "label": "some_word",
         "kind": 5,
         "importPath": "findword.word",
