@@ -160,6 +160,51 @@
         "documentation": {}
     },
     {
+        "label": "is_valid_code",
+        "kind": 2,
+        "importPath": "code_validation.code_validation",
+        "description": "code_validation.code_validation",
+        "peekOfCode": "def is_valid_code(S):\n    if len(S) == 7 and S[0] == '#':\n        for char in S[1:]:\n            if not (char.isdigit() or char.lower() in 'abcdef'):\n                return False\n        return True\n    return False\nS = input(\"Enter string: \")\nif is_valid_code(S):\n    print(\"true\")",
+        "detail": "code_validation.code_validation",
+        "documentation": {}
+    },
+    {
+        "label": "S",
+        "kind": 5,
+        "importPath": "code_validation.code_validation",
+        "description": "code_validation.code_validation",
+        "peekOfCode": "S = input(\"Enter string: \")\nif is_valid_code(S):\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "detail": "code_validation.code_validation",
+        "documentation": {}
+    },
+    {
+        "label": "can_form_consecutive",
+        "kind": 2,
+        "importPath": "code_validation.consecutive_number",
+        "description": "code_validation.consecutive_number",
+        "peekOfCode": "def can_form_consecutive(N, M):\n    if N <= 1:\n        return True\n    M.sort()\n    for i in range(1, N):\n        if M[i] != M[i - 1] + 1:\n            return False\n    return True\nN = int(input())\nM = list(map(int, input().split()))",
+        "detail": "code_validation.consecutive_number",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "code_validation.consecutive_number",
+        "description": "code_validation.consecutive_number",
+        "peekOfCode": "N = int(input())\nM = list(map(int, input().split()))\nif can_form_consecutive(N, M):\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "detail": "code_validation.consecutive_number",
+        "documentation": {}
+    },
+    {
+        "label": "M",
+        "kind": 5,
+        "importPath": "code_validation.consecutive_number",
+        "description": "code_validation.consecutive_number",
+        "peekOfCode": "M = list(map(int, input().split()))\nif can_form_consecutive(N, M):\n    print(\"true\")\nelse:\n    print(\"false\")",
+        "detail": "code_validation.consecutive_number",
+        "documentation": {}
+    },
+    {
         "label": "print_diamond",
         "kind": 2,
         "importPath": "day1.print_pattern",
