@@ -224,6 +224,24 @@
         "documentation": {}
     },
     {
+        "label": "some_word",
+        "kind": 5,
+        "importPath": "findword.word",
+        "description": "findword.word",
+        "peekOfCode": "some_word = 'how are you'\nword = 'h'\nif word in some_word:\n    print(True)\nelse:\n    print(False)",
+        "detail": "findword.word",
+        "documentation": {}
+    },
+    {
+        "label": "word",
+        "kind": 5,
+        "importPath": "findword.word",
+        "description": "findword.word",
+        "peekOfCode": "word = 'h'\nif word in some_word:\n    print(True)\nelse:\n    print(False)",
+        "detail": "findword.word",
+        "documentation": {}
+    },
+    {
         "label": "calculate_distance",
         "kind": 2,
         "importPath": "leap_year_plus_another.distance",
