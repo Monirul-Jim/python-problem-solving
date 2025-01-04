@@ -362,7 +362,7 @@
         "kind": 5,
         "importPath": "findword.word_string",
         "description": "findword.word_string",
-        "peekOfCode": "user_input = input('Enter input : ')\nfor r in range(1, len(user_input)+1):\n    combs = combinations(user_input, r)\n    for comb in combs:\n        print(''.join(comb))",
+        "peekOfCode": "user_input = input('Enter your word : ')\nfor r in range(1, len(user_input)+1):\n    combs = combinations(user_input, r)\n    for comb in combs:\n        print(''.join(comb))",
         "detail": "findword.word_string",
         "documentation": {}
     },
