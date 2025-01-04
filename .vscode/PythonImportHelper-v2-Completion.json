@@ -479,7 +479,16 @@
         "kind": 2,
         "importPath": "palindrome.palindrome",
         "description": "palindrome.palindrome",
-        "peekOfCode": "def is_palindrome(s):\n    cleaned = ''.join(char.lower() for char in s if char.isalnum())\n    return cleaned == cleaned[::-1]\nstring = \"A man, a plan, a canal: Panama\"\nprint(is_palindrome(string))",
+        "peekOfCode": "def is_palindrome(s):\n    cleaned = ''.join(char.lower() for char in s if char.isalnum())\n    return cleaned == cleaned[::-1]\nstring = \"A man, a plan, a canal: Panama\"\nprint(is_palindrome(string))\ndef second_largest(numbers):\n    unique_numbers = list(set(numbers))\n    unique_numbers.sort(reverse=True)\n    return unique_numbers[1] if len(unique_numbers) > 1 else None\nnums = [4, 1, 2, 2, 5, 5, 3]",
+        "detail": "palindrome.palindrome",
+        "documentation": {}
+    },
+    {
+        "label": "second_largest",
+        "kind": 2,
+        "importPath": "palindrome.palindrome",
+        "description": "palindrome.palindrome",
+        "peekOfCode": "def second_largest(numbers):\n    unique_numbers = list(set(numbers))\n    unique_numbers.sort(reverse=True)\n    return unique_numbers[1] if len(unique_numbers) > 1 else None\nnums = [4, 1, 2, 2, 5, 5, 3]\nprint(second_largest(nums))",
         "detail": "palindrome.palindrome",
         "documentation": {}
     },
@@ -488,7 +497,16 @@
         "kind": 5,
         "importPath": "palindrome.palindrome",
         "description": "palindrome.palindrome",
-        "peekOfCode": "string = \"A man, a plan, a canal: Panama\"\nprint(is_palindrome(string))",
+        "peekOfCode": "string = \"A man, a plan, a canal: Panama\"\nprint(is_palindrome(string))\ndef second_largest(numbers):\n    unique_numbers = list(set(numbers))\n    unique_numbers.sort(reverse=True)\n    return unique_numbers[1] if len(unique_numbers) > 1 else None\nnums = [4, 1, 2, 2, 5, 5, 3]\nprint(second_largest(nums))",
+        "detail": "palindrome.palindrome",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "palindrome.palindrome",
+        "description": "palindrome.palindrome",
+        "peekOfCode": "nums = [4, 1, 2, 2, 5, 5, 3]\nprint(second_largest(nums))",
         "detail": "palindrome.palindrome",
         "documentation": {}
     },
