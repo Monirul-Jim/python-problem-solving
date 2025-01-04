@@ -475,6 +475,24 @@
         "documentation": {}
     },
     {
+        "label": "is_palindrome",
+        "kind": 2,
+        "importPath": "palindrome.palindrome",
+        "description": "palindrome.palindrome",
+        "peekOfCode": "def is_palindrome(s):\n    cleaned = ''.join(char.lower() for char in s if char.isalnum())\n    return cleaned == cleaned[::-1]\nstring = \"A man, a plan, a canal: Panama\"\nprint(is_palindrome(string))",
+        "detail": "palindrome.palindrome",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 5,
+        "importPath": "palindrome.palindrome",
+        "description": "palindrome.palindrome",
+        "peekOfCode": "string = \"A man, a plan, a canal: Panama\"\nprint(is_palindrome(string))",
+        "detail": "palindrome.palindrome",
+        "documentation": {}
+    },
+    {
         "label": "Customer",
         "kind": 6,
         "importPath": "restaurant_management.restaurant",
