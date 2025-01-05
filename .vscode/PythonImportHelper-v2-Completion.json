@@ -304,6 +304,15 @@
         "documentation": {}
     },
     {
+        "label": "swap_variables",
+        "kind": 2,
+        "importPath": "day3.swap",
+        "description": "day3.swap",
+        "peekOfCode": "def swap_variables(a, b):\n    \"\"\"\n    Swaps the values of two variables without using a temporary variable.\n    Args:\n      a: The first variable.\n      b: The second variable.\n    Returns:\n      A tuple containing the swapped values of a and b.\n    \"\"\"\n    a = a + b",
+        "detail": "day3.swap",
+        "documentation": {}
+    },
+    {
         "label": "sentence",
         "kind": 5,
         "importPath": "findword.reverse_word",
