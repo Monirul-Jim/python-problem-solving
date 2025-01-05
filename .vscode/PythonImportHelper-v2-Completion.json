@@ -313,6 +313,24 @@
         "documentation": {}
     },
     {
+        "label": "x",
+        "kind": 5,
+        "importPath": "day3.swap",
+        "description": "day3.swap",
+        "peekOfCode": "x = 10\ny = 5\nprint(f\"Before swapping: x = {x}, y = {y}\")\nx, y = swap_variables(x, y)\nprint(f\"After swapping: x = {x}, y = {y}\")",
+        "detail": "day3.swap",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "day3.swap",
+        "description": "day3.swap",
+        "peekOfCode": "y = 5\nprint(f\"Before swapping: x = {x}, y = {y}\")\nx, y = swap_variables(x, y)\nprint(f\"After swapping: x = {x}, y = {y}\")",
+        "detail": "day3.swap",
+        "documentation": {}
+    },
+    {
         "label": "sentence",
         "kind": 5,
         "importPath": "findword.reverse_word",
