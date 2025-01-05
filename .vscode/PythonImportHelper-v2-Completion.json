@@ -304,11 +304,38 @@
         "documentation": {}
     },
     {
+        "label": "reverse_string",
+        "kind": 2,
+        "importPath": "day3.string_reverse",
+        "description": "day3.string_reverse",
+        "peekOfCode": "def reverse_string(s):\n    return s[::-1]\n# Example usage\nstring = \"hello\"\nreversed_string = reverse_string(string)\nprint(f\"Original string: {string}\")\nprint(f\"Reversed string: {reversed_string}\")",
+        "detail": "day3.string_reverse",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 5,
+        "importPath": "day3.string_reverse",
+        "description": "day3.string_reverse",
+        "peekOfCode": "string = \"hello\"\nreversed_string = reverse_string(string)\nprint(f\"Original string: {string}\")\nprint(f\"Reversed string: {reversed_string}\")",
+        "detail": "day3.string_reverse",
+        "documentation": {}
+    },
+    {
+        "label": "reversed_string",
+        "kind": 5,
+        "importPath": "day3.string_reverse",
+        "description": "day3.string_reverse",
+        "peekOfCode": "reversed_string = reverse_string(string)\nprint(f\"Original string: {string}\")\nprint(f\"Reversed string: {reversed_string}\")",
+        "detail": "day3.string_reverse",
+        "documentation": {}
+    },
+    {
         "label": "swap_variables",
         "kind": 2,
         "importPath": "day3.swap",
         "description": "day3.swap",
-        "peekOfCode": "def swap_variables(a, b):\n    \"\"\"\n    Swaps the values of two variables without using a temporary variable.\n    Args:\n      a: The first variable.\n      b: The second variable.\n    Returns:\n      A tuple containing the swapped values of a and b.\n    \"\"\"\n    a = a + b",
+        "peekOfCode": "def swap_variables(a, b):\n    a = a + b\n    b = a - b\n    a = a - b\n    return a, b\n# Example usage\nx = 10\ny = 5\nprint(f\"Before swapping: x = {x}, y = {y}\")\nx, y = swap_variables(x, y)",
         "detail": "day3.swap",
         "documentation": {}
     },
